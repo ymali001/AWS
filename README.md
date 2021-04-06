@@ -19,7 +19,7 @@ It is time to take what you have learned about unsupervised learning and the AWS
 
 ## Option 1: Robo Advisor for Retirement Plans
 
-![Robot](Images/robot.jpg)
+![Robot](robot.jpg)
 
 *Photo by [Alex Knight](https://www.pexels.com/@alex-knight-1272316?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/high-angle-photo-of-robot-2599244/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)*
 
@@ -94,7 +94,7 @@ The `riskLevel` custom slot will be used to retrieve the risk level the user is 
 
 To format the response cards for the intent, click on the gear icon next to the intent as seen in the image below:
 
-![gear_icon](Images/gear_icon.png)
+![gear_icon](gear_icon.png)
 
 Next, input the following data in the resulting display window:
 
@@ -121,13 +121,13 @@ Move to the *Confirmation Prompt* section, and set the following messages:
 
 Leave the error handling configuration for the `RecommendPortfolio` bot with the default values.
 
-![Error handling configuration](Images/error_handling.png)
+![Error handling configuration](error_handling.png)
 
 #### Build and Test the Robo Advisor
 
 In this section, you will test your Robo Advisor. To build your bot, click on the `Build` button in the upper right hand corner. Once the build is complete, test it in the chatbot window. You should see a conversation like the one below.
 
-![Robo Advisor test](Images/bot-test-no-lambda.gif)
+![Robo Advisor test](bot-test-no-lambda.gif)
 
 #### Enhance the Robo Advisor with an Amazon Lambda Function
 
@@ -157,7 +157,7 @@ Once you finish coding your lambda function, test it using the [sample test case
 
 After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new lambda function by selecting it in the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
 
-![Robo Advisor test with Lambda](Images/bot-test-with-lambda.gif)
+![Robo Advisor test with Lambda](bot-test-with-lambda.gif)
 
 ### Submission
 
@@ -175,8 +175,8 @@ Once you have uploaded all the files into the repo, post a link to your homework
 
 * Make sure your intent and slot names are named correctly in your Lambda code.  The names in Lex should match the names in Lambda exactly:
 
-![Lex_Names1](Images/Lex_names1.png)
-![Lex_Names2](Images/Lex_names2.png)
+![Lex_Names1](Lex_names1.png)
+![Lex_Names2](Lex_names2.png)
 
 * You may have to refresh the Lex intent page after creating the custom slot and the lambda function in order to see them in the options.
 
@@ -188,7 +188,7 @@ Once you have uploaded all the files into the repo, post a link to your homework
 
 ## Option 2: Clustering Crypto
 
-![Cryptocurrencies coins](Images/cryptocurrencies-coins.jpg)
+![Cryptocurrencies coins](cryptocurrencies-coins.jpg)
 _[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)_
 
 ### Background
@@ -259,7 +259,7 @@ Once you have reduced the data dimensions, create a DataFrame named `pcs_df` usi
 
 You should have a DataFrame like the following:
 
-![pcs_df](Images/pcs_df.png)
+![pcs_df](pcs_df.png)
 
 #### Clustering Cryptocurrencies Using K-Means
 
@@ -273,7 +273,7 @@ Perform the following tasks:
 
 3. Create a new DataFrame named `clustered_df`, that includes the following columns `"Algorithm", "ProofType", "TotalCoinsMined", "TotalCoinSupply", "PC 1", "PC 2", "PC 3", "CoinName", "Class"`. You should maintain the index of the `crypto_df` DataFrames as is shown bellow.
 
-    ![clustered_df](Images/clustered_df.png)
+    ![clustered_df](clustered_df.png)
 
 #### Visualizing Results
 
